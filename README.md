@@ -1,4 +1,6 @@
-# basic-react-app
+# react-seed
+
+A React seed, ready to be planted!
 
 I've made this as light as possible, so it's nice and easy to get a new project started.
 
