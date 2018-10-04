@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractCssChunks = require('extract-css-chunks-webpack-plugin');
 
 module.exports = {
     module: {
@@ -19,7 +20,7 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: [
-                    'style-loader',
+                    ExtractCssChunks.loader,
                     'css-loader'
                 ]
             }
@@ -29,6 +30,11 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './src/index.html',
             filename: './index.html'
+        }),
+        new ExtractCssChunks({
+            filename: '[name].css',
+            chunkFilename: '[id].css',
+            hot: true,
         })
     ]
 };
