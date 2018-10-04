@@ -1,6 +1,6 @@
 # react-seed
 
-## A React seed, ready to be planted!
+### A React seed, ready to be planted!
 I've made this as light as possible, so it's nice and easy to get a new project started.
 
 This repo is suitable for Development. It will need additional configuring if it to be used for Prod. For instance, I've now included `extract-css-chunks-webpack-plugin` which pulls all css into one file. But it doesn't have the ability to uglify... yet
@@ -40,7 +40,7 @@ This repo is suitable for Development. It will need additional configuring if it
 ### scripts include:
  - `"build": "webpack --mode production"`
  - `"watch": "webpack-dev-server --mode development"`
- - `"test": "jest ./src"`
+ - `"test": "jest ./src/**/*.test.js"`
 
 ***
 
