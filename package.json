@@ -1,6 +1,6 @@
 {
   "name": "react-seed",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A basic React seed, ready to be planted!",
   "homepage": "https://github.com/SeedBoot/react-seed#readme",
   "main": "src/index.js",
