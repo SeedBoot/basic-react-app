@@ -1,4 +1,11 @@
-h1 {
-    font-size: 18px;
-    color: mediumseagreen;
+html, body, #root {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+#root {
+    background: #272822;
 }
