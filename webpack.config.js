@@ -1,5 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractCssChunks = require('extract-css-chunks-webpack-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
     module: {
@@ -25,6 +27,15 @@ module.exports = {
                 ]
             }
         ]
+    },
+    optimization: {
+        splitChunks: {
+            chunks: 'all',
+        },
+        minimizer: [
+            new UglifyJsPlugin(),
+            new OptimizeCSSAssetsPlugin(),
+        ],
     },
     plugins: [
         new HtmlWebpackPlugin({

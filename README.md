@@ -21,7 +21,7 @@ This repo is suitable for Development. It will need additional configuring if it
     "react-dom": "^16.5.0"
 },
 "devDependencies": {
-    "@babel/core": "^7.1.2",
+ "@babel/core": "^7.1.2",
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.4",
@@ -30,7 +30,9 @@ This repo is suitable for Development. It will need additional configuring if it
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "jest": "^23.6.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
     "style-loader": "^0.23.0",
+    "uglifyjs-webpack-plugin": "^2.0.1",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.9"
@@ -45,6 +47,5 @@ This repo is suitable for Development. It will need additional configuring if it
 ***
 
 ## TODO
- - Add uglify or similar for CSS, JS & HTML
  - Create Dev and Prod scripts for builds
  - Create example test
